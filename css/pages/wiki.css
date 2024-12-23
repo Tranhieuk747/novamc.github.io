@@ -1,0 +1,183 @@
+@import "css/global.css";
+
+/*Header*/
+#header {
+    background: url("../../images/header-background.jpg") no-repeat fixed center;
+    min-width: 100%;
+    min-height: 400px;
+    height: 30vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+}
+
+#header .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 150px;
+    width: 100%;
+}
+
+#header .content .info {
+    display: flex;
+    flex-direction: column;
+}
+
+#header .content .info .minecraft-server-ip {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#header .content .info .title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 900;
+}
+
+#header .content .info .title span {
+    color: var(--main-color);
+}
+
+#header .content .description {
+    color: var(--description-color);
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+/*FAQ*/
+#faq {
+    background: var(--stats-background);
+}
+
+#faq .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#faq .content .info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#faq .content .info .section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--white-color);
+    position: relative;
+}
+
+#faq .content .info .section-title::before {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    width: 150px;
+    height: 1px;
+    border-radius: 5px;
+    background: var(--description-color);
+}
+
+#faq .content .info .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--main-color);
+}
+
+#faq .content .info .section-title span {
+    color: var(--main-color);
+}
+
+#faq .content .info .section-description {
+    color: var(--description-color);
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 70%;
+}
+
+#faq .content .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#faq .content .accordion .accordion-item {
+    background: var(--stats-background);
+    border-radius: 5px;
+}
+
+#faq .content .accordion .accordion-item .accordion-item-header {
+    padding: 20px 50px 20px 20px;
+    line-height: 1.6;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    color: var(--white-color);
+    font-size: 17px;
+}
+
+#faq .content .accordion .accordion-item .accordion-item-header::after {
+    content: "\002B";
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+}
+
+#faq .content .accordion .accordion-item .accordion-item-header.active::after {
+    content: "\2212";
+}
+
+#faq .content .accordion .accordion-item .accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+#faq .content .accordion .accordion-item .accordion-item-body .accordion-item-body-content {
+    padding: 20px;
+    line-height: 1.6;
+    border-top: 1px solid var(--stats-background);
+    color: var(--description-color);
+}
+
+
+@media screen and (max-width: 530px) {
+    #header .content {
+        justify-content: start;
+        align-items: start;
+    }
+
+    #header .content .info .title {
+        font-size: 30px;
+    }
+}
+
+/*Admin-Team*/
+@media screen and (max-width: 390px) {
+    #admin-team .group .users .user img {
+        max-width: 100%;
+    }
+
+    #admin-team .group .users .user .name {
+        font-size: 20px;
+    }
+}
