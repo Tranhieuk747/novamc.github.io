@@ -1,1 +1,0 @@
-# novamc.github.io
