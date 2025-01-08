@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="icon" href="images/logo.png">
+  <meta name="description" content="Free, modern and nice web template for Minecraft server.">
+  <meta name="author" content="Astronawta">
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/pages/wiki.css">
+
+  <title>NovaMC | WIKI</title>
+</head>
+<body>
+  <!--Navbar-->
+  <div class="navbar">
+    <div class="menu-mobile">
+      <a href="index.html">
+        <div class="logo">
+          <img src="images/logo.png" alt="Server logo" class="logo-img">
+          <h3 class="server-name">ExampleName</h3>
+        </div>
+      </a>
+
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="links">
+      <a href="index.html" class="link">Trang chủ</a>
+      <a href="rules.html" class="link">Luật lệ</a>
+      <a href="#" class="link active">WIKI</a>
+      <a href="donate.html" class="link">Ủng hộ</a>
+    </div>
+  </div>
+
+  <!--Header-->
+  <section id="header">
+    <div class="content">
+      <div class="info">
+        <p class="minecraft-server-ip">mc.example.com</p>
+        <h1 class="title"><span>WIKI</span></h1>
+      </div>
+      <p class="description">
+        Danh sách các lệnh trong máy chủ.
+      </p>
+    </div>
+  </section>
+  
+  <!--FAQs-->
+    <section id="faq">
+      <div class="content">
+          <div class="info">
+              <h2 class="section-title">Danh sách các lệnh trong máy chủ</h2>
+              <p class="section-description"></p>
+          </div>
+
+          <div class="accordion faqList">
+              <div class="accordion-item">
+                  <div class="accordion-item-header">
+                      LOGIN
+                  </div>
+                  <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                          <p>/register(reg) {mật khẩu} {nhập lại mật khẩu}: đăng kí tài khoản</p>
+                          <p>/login(log,l) {mật khẩu}: đăng nhập tài khoản</p>
+                          <p>/logout {mật khẩu}: đăng xuất tài khoản</p>
+                          <p>/unregister(unreg) {mật khẩu}: đăng kí lại tài khoản</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="accordion-item">
+                  <div class="accordion-item-header">
+                      TPA
+                  </div>
+                  <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                          <p>/tpa {name}: gửi yêu cầu dịch chuyển đến người chơi được chỉ định</p>
+                          <p>/tpaccept: Chấp nhận yêu cầu dịch chuyển</p>
+                          <p>/tpacancel: Bỏ qua yêu cầu dịch chuyển</p>
+                          <p>/tpdeny: Từ chối yêu cầu dịch chuyển</p>
+                          <p>/tpahere {name}: gửi yêu cầu cho người chơi được chỉ định dịch chuyển đến bản thân</p>
+                          <p>/tpaall: gửi yêu cầu dịch chuyển đến mọi người chơi</p>
+                          <p>/back: quay lại vị trí trước đó - dịch chuyển/chết</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="accordion-item">
+                  <div class="accordion-item-header">
+                    CLAIMS
+                  </div>
+                  <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                          <p>/claims {player}: tạo claims</p>
+                          <p>/AbandonClaim: Xóa vùng đất mà bạn đang đứng.</p>
+                          <p>/ClaimExplosions: Chuyển đổi chế độ cho phép hoặc cấm nổ trong vùng đất.</p>
+                          <p>/Trust {player}: Cấp quyền cho người chơi khác chỉnh sửa trong vùng đất của bạn.</p>
+                          <p>/UnTrust {player}: Thu hồi mọi quyền đã cấp cho một người chơi trong vùng đất của bạn.</p>
+                          <p>/AccessTrust {player}: Cấp quyền cho người chơi sử dụng nút, cần gạt và giường của bạn.</p>
+                          <p>/ContainerTrust: Cấp quyền cho người chơi sử dụng nút, cần gạt, giường, bàn chế tạo, hộp chứa và động vật của bạn.</p>
+                          <p>/TrustList: Liệt kê các quyền trong vùng đất mà bạn đang đứng.</p>
+                          <p>/SubdivideClaims: Chuyển xẻng của bạn sang chế độ phân chia vùng đất.</p>
+                          <p>/BasicClaims: Đưa xẻng của bạn trở lại chế độ vùng đất cơ bản.</p>
+                          <p>/PermissionTrust  {player}: Cấp quyền cho người chơi chia sẻ cấp độ quyền của họ với người khác.</p>
+                          <p>/Untrust All: Xóa tất cả các quyền của tất cả người chơi trong vùng đất của bạn.</p>
+                          <p>/AbandonAllClaims: Xóa tất cả các vùng đất của bạn.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="accordion-item">
+                  <div class="accordion-item-header">
+                      TEAMS
+                  </div>
+                  <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                        <p><strong>+ Các lệnh cho người chơi:</strong></p>
+                        <p>/team join: Tham gia vào đội đã chỉ định.</p>
+                        <p>/team create: Tạo một đội mới với tên được cung cấp.</p>
+                        <p>/team leave: Rời khỏi đội hiện tại.</p>
+                        <p>/team home: Dịch chuyển đến vị trí nhà của đội.</p>
+                        <p>/team chat [message]: Gửi một tin nhắn duy nhất đến trò chuyện đội hoặc bật chế độ trò chuyện đội nếu không có tin nhắn.</p>
+                        <p>/team info [team/player]: Hiển thị thông tin về đội hoặc đội mà người chơi thuộc về.</p>
+                        <p>/team allychat [message]: Gửi tin nhắn chỉ đồng minh của đội có thể thấy.</p>
+                        <p>/team warp [password]: Dịch chuyển đến một vị trí đã được đội đặt.</p>
+                        <p>/team echest: Mở rương Ender của đội.</p>
+                        <p>/team help: Cung cấp trang trợ giúp tùy chỉnh với các lệnh người dùng có quyền truy cập.</p>
+                        <p><strong>+ Các lệnh cho Quản trị viên và Chủ sở hữu:</strong></p>
+                        <p>/team invite: Mời một người chơi tham gia đội.</p>
+                        <p>/team kick: Loại bỏ một người chơi có cấp bậc thấp hơn ra khỏi đội.</p>
+                        <p>/team ban: Cấm một người chơi có cấp bậc thấp hơn tham gia đội.</p>
+                        <p>/team unban: Cho phép người chơi bị cấm quay lại đội.</p>
+                        <p>/team sethome: Đặt vị trí nhà cho đội.</p>
+                        <p>/team delhome: Xóa vị trí nhà của đội.</p>
+                        <p>/team setwarp [password]: Đặt một điểm dịch chuyển mới cho đội.</p>
+                        <p>/team delwarp [password]: Xóa một điểm dịch chuyển (mật khẩu không bắt buộc đối với chủ sở hữu).</p>
+                        <p>/team chest claim: Chiếm hữu rương mà bạn đang đứng lên.</p>
+                        <p>/team chest remove: Hủy chiếm hữu rương mà bạn đang đứng lên.</p>
+                        <p>/team pvp: Chuyển đổi chế độ PvP giữa các thành viên trong đội.</p>
+                        <p><strong>+ Các lệnh chỉ dành cho Chủ sở hữu:</strong></p>
+                        <p>/team disband: Giải tán đội, buộc tất cả thành viên rời khỏi (không thể hoàn tác).</p>
+                        <p>/team name: Thay đổi tên đội.</p>
+                        <p>/team description: Cập nhật mô tả cho đội.</p>
+                        <p>/team open: Chuyển đổi giữa chế độ chỉ mời và chế độ mở cho mọi người.</p>
+                        <p>/team title {player/me}; {title&}: Đặt danh hiệu cho một người chơi trong đội.</p>
+                        <p>/team color: Thay đổi màu tên đội.</p>
+                        <p>/team ally: Gửi yêu cầu hoặc chấp nhận liên minh với đội khác.</p>
+                        <p>/team neutral: Hủy bỏ liên minh với đội khác.</p>
+                        <p>/team setowner: Đặt một thành viên làm chủ sở hữu mới của đội (nếu chế độ "singleOwner" được kích hoạt).</p>
+                        <p>/team chest removeall: Hủy chiếm hữu tất cả các rương đã được chiếm bởi đội.</p>
+                        <p>/team tag: Cập nhật thẻ của đội.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="accordion faqList">
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        SIT & SKIN
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                          <p><strong>+ SIT:</strong></p>
+                          <p>/sit (/gsit): Ngồi lên một khối.</p>
+                          <p>/lay (/glay): Nằm trên một khối.</p>
+                          <p>/bellyflop (/gbellyflop): Nằm sấp trên một khối.</p>
+                          <p>/spin (/gspin): Xoay vòng trên một khối.</p>
+                          <p>/crawl (/gcrawl): Bò trên mặt đất.</p>
+                          <p><strong>+ SKIN:</strong></p>
+                          <p>/skin: Thay đổi skin của bạn.</p>
+                          <p>/skin set {skinName}: Thay đổi skin của bạn.</p>
+                          <p>/skin set {skinName} {target}: Đặt skin cho một người chơi khác.</p>
+                          <p>/skin set {skinName} {target} {skinVariant}: Đặt skin cho một người chơi khác.</p>
+                          <p>/skin url {url}: Thay đổi skin của bạn từ một URL.</p>
+                          <p>/skin url {url} {skinVariant}: Thay đổi skin của bạn từ một URL.</p>
+                          <p>/skin update: Cập nhật lại skin của bạn.</p>
+                          <p>/skin update {target}: Cập nhật skin của một người chơi khác.</p>
+                          <p>/skin search {searchString}: Tìm kiếm một skin mà bạn muốn.</p>
+                          <p>/skin clear: Xóa skin của bạn.</p>
+                          <p>/skin clear {target}: Xóa skin của một người chơi khác.</p>
+                          <p>/skin {skinName}: Thay đổi skin của bạn.</p>
+                          <p>/skin help: Hiển thị lệnh trợ giúp này.</p>
+                          <p>/skins: Mở giao diện GUI để chọn skin.</p>
+                         </div>
+                    </div>
+                </div>  
+          </div>
+      </div>
+  </section>
+
+  <!--Footer-->
+  <footer id="footer">
+    <p class="copyright">&copy; 2024 <span class="server-name-footer">NovaMC</span>. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" class="link tiktok-link"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#" class="link instagram-link"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#" class="link discord-link-footer"><i class="fa-brands fa-discord"></i></a>
+    </div>
+  </footer>
+</body>
+<script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/cbf5ee59c8.js" crossorigin="anonymous"></script>
+</html>
